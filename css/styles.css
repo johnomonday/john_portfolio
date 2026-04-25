@@ -301,6 +301,7 @@ header nav {
 
 /* PROJECTS SECTION */
 .projects {
+    padding-top: 5rem;
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -310,7 +311,7 @@ header nav {
     align-items: center;
 }
 
-.projects H2 {
+.projects h2 {
     color: gold;
 }
 
@@ -362,6 +363,11 @@ header nav {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; 
+}
+
+.project-cards:nth-child(3) h3{
+ color: black;
+ 
 }
 
 
@@ -696,8 +702,11 @@ footer p {
 
 
     /* Technologies I've Learned */
-    .my-skills {
+    .skills {
     padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 
     .skills-container {
@@ -709,7 +718,7 @@ footer p {
 
 
     /* MY PROJECTS */
-    .my-projects {
+    .projects {
         padding-top: 5rem;
     }
 
@@ -813,6 +822,7 @@ footer p {
     /* HERO SECTION */
     .hero {
         min-height: 75vh;
+        background-position: top center;
     }
 
     .hero-content {
@@ -841,20 +851,23 @@ footer p {
     /* ABOUT SECTION */
 
     /* ABOUT SECTION */
-    .about-me {
+
+    
+    .about {
     min-height: 50vh;
     padding-top: 7rem;
     }
 
 
-    .about-container {
+    .about-content {
     padding-top: 4rem;
     width: 70%;
     }
 
     .about-grid {
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 1fr 300px;
     align-items: center;
+    gap: 2rem;
     }
 
     .about-grid div {
@@ -866,10 +879,10 @@ footer p {
     .about-text {
     width: 100%;
    max-width: none;
-   border-top-left-radius: 12px;
-   border-bottom-left-radius: 12px;
-   border-top-right-radius: 0px;
-   border-bottom-right-radius: 0px;
+    }
+
+    .about-text p {
+        text-align: left;
     }
 
 
@@ -878,13 +891,15 @@ footer p {
 
     /* MY SKILLS SECTION */
     
-    .my-skills {
+    .skills {
     padding-top: 7rem;
     min-height: 80vh;
     }   
+
+
     .skills-container {
-    width: 80%;
-    max-width: none;
+    width: 100%;
+    height: 100%;
     }
 
     .skills-container .skills-grid {
@@ -897,8 +912,9 @@ footer p {
     }
 
     .skills-grid div {
-    gap: 0.7rem;
+    gap: 1rem;
     }
+
 
 
 
@@ -933,33 +949,29 @@ footer p {
 
     .project-cards:nth-child(3) {
     grid-column: 1/ span 2;
-    background-position: top center;
     }
 
 
 
 
     /* CONTACT SECTION */
-
-    contact {
-    padding-top: 7rem;
-    gap: 2.5rem;
+    
+    .contact {
+        padding-top: 5rem;
+        margin: 3rem auto;
+        gap: 3rem;
     }
-
 
     .form-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
+    gap: 2rem;
     }
 
-    .form-container .contact-text {
+
+    .form-container .contact-content {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align:left;
+    text-align: center;
     gap: 1.3rem;
     }
-
 
     .contact-text p {
     font-size: 1.2rem;
@@ -967,10 +979,13 @@ footer p {
 
     .contact-text h3 {
     font-size: 1rem;
+    color:#ff550c;
     }
 
     form {
-    width: 100%;
+    width: 80%;
+    max-width: 500px;
+    gap: 1.3rem;
     }
 
     label {
@@ -992,8 +1007,11 @@ footer p {
     }
 
     .icons {
-    justify-content: flex-start;
+    justify-content: center;
     font-size: 1.2rem;
     }
+
+
+   
 
 }
